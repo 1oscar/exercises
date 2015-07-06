@@ -18,7 +18,8 @@ tags: python
  3. 用operator模块来计算数值，判断列表的操作符，一次调用operator模块的相应的函数， 
    - 注意1，operator没有减法，需要加法，其中一个被加数是负数即可。
    - 注意2，operator的除法操作要求a/b，b 不能为0， 已判断，同时，a/b的位置不能互换，其他的加减乘都可以互换.
-**operator模块官网地址** [operator模块](https://docs.python.org/2/library/operator.html)
-**关于operator模块的各个操作函数使用方法如下图:** ![**operator模块的各个操作函数**](https://github.com/1oscar/exercises/blob/master/cal_math_expression/operators.png)
+
+<br>**operator模块官网地址** [operator模块](https://docs.python.org/2/library/operator.html)
+<br>**关于operator模块的各个操作函数使用方法如下图:** ![**operator模块的各个操作函数**](https://github.com/1oscar/exercises/blob/master/cal_math_expression/operators.png)
 
 
