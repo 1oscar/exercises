@@ -3,7 +3,7 @@ title: "决策树"
 tags: [python, scikit-learn]
 ---
 
-### 用途： 银行信息自动评估系统; 商家用户行为分析
+### 用途： 银行信用自动评估系统; 商家用户行为分析
 #### 代码说明
 
 1. [**CSV datasets**](https://github.com/1oscar/exercises/blob/master/machine_learning/decision_tree/decision_tree_datasets.csv)
