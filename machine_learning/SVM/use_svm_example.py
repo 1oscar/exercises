@@ -46,14 +46,15 @@ yy_up = a*xx + (b[1] - a*b[0])
 print 'w:', w
 print 'a:', a
 
-#plot
+#plot k: black, g: green, r: red, b: blue
 pl.plot(xx, yy, 'k-')
-pl.plot(xx, yy_down, 'k--')
-pl.plot(xx, yy_up, 'k--')
+pl.plot(xx, yy_down, 'g--')
+pl.plot(xx, yy_up, 'r--')
 
 # draw points
 pl.scatter(cls.support_vectors_[:, 0], cls.support_vectors_[:, 1], s = 80, facecolors='none')
 pl.scatter(X[:,0], X[:,1], c=Y, cmap=pl.cm.Paired)
-
+#axis: tight;image;equal;off;v;scaled
 pl.axis('tight')
+pl.title('段家公子'.decode('utf8'))
 pl.show()
