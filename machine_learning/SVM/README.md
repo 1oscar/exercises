@@ -16,4 +16,4 @@ tags: [python, scikit-learn]
 8. 描出点`pl.scatter(...)`
 9. `pl.title(..)`内容有长度限制，由`utf8`-->`unicode`节省了占用空间
 10. `pl.show()`才会最终显示`SVM`的分类图像
-
+11. 图片![result](https://github.com/1oscar/exercises/blob/master/machine_learning/SVM/1.png)
