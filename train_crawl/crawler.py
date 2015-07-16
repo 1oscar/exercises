@@ -8,6 +8,9 @@
 
 import urllib2
 import cookielib 
+import time
+import smtplib
+import re
 
 
 def get_page(url):
@@ -42,6 +45,19 @@ def get_url():
     return url
 
 
+def parser_page(html):
+    pass
+
+
+def send_mail():
+    pass
+
+
 if __name__ == '__main__':
     url = get_url()
     html = get_page(url)
+    '''
+    while True:
+        get_page(get_url())
+        time.sleep(300)
+    '''
