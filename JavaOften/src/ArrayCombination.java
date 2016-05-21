@@ -1,10 +1,10 @@
 /**
- * 1.µİ¹éÅÅÁĞËã·¨
- * 2. µİ¹é×éºÏËã·¨
- * 3. ¶¯Ì¬¹æ»®×éºÏËã·¨
+ * 1.é€’å½’æ’åˆ—ç®—æ³•
+ * 2. é€’å½’ç»„åˆç®—æ³•
+ * 3. åŠ¨æ€è§„åˆ’ç»„åˆç®—æ³•
  * 
  */
-//ÅÅÁĞËã·¨
+//æ’åˆ—ç®—æ³•
 //import java.util.ArrayList;
 //import java.util.Arrays;
 //import java.util.List;
@@ -51,7 +51,7 @@
 //        }
 //    }
 //}
-//×éºÏËã·¨
+//ç»„åˆç®—æ³•
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,9 +69,9 @@ public class ArrayCombination {
  }
  
  /**
-  * ÊµÏÖµÄËã·¨
-  * @param a Êı¾İÊı×é
-  * @param num MÑ¡NÖĞ NµÄ¸öÊı
+  * å®ç°çš„ç®—æ³•
+  * @param a æ•°æ®æ•°ç»„
+  * @param num Mé€‰Nä¸­ Nçš„ä¸ªæ•°
   * @return
   */
  private List<String> combine(String[] a, int num) {
@@ -91,12 +91,12 @@ public class ArrayCombination {
   int sum = 0;
   String temp = "1";
   while (true) {
-   // ÅĞ¶ÏÊÇ·ñÈ«²¿ÒÆÎ»Íê±Ï
+   // åˆ¤æ–­æ˜¯å¦å…¨éƒ¨ç§»ä½å®Œæ¯•
    for (int i = b.length - 1; i >= b.length - num; i--) {
     if (b[i].equals("1"))
      sum += 1;
    }
-   // ¸ù¾İÒÆÎ»Éú³ÉÊı¾İ
+   // æ ¹æ®ç§»ä½ç”Ÿæˆæ•°æ®
    for (int i = 0; i < b.length; i++) {
     if (b[i].equals("1")) {
      point = i;
@@ -109,16 +109,16 @@ public class ArrayCombination {
      }
     }
    }
-   // Íù·µ»ØÖµÁĞ±íÌí¼ÓÊı¾İ
+   // å¾€è¿”å›å€¼åˆ—è¡¨æ·»åŠ æ•°æ®
    list.add(sb.toString());
 
-   // µ±Êı×éµÄ×îºónumÎ»È«²¿Îª1 ÍË³ö
+   // å½“æ•°ç»„çš„æœ€ånumä½å…¨éƒ¨ä¸º1 é€€å‡º
    if (sum == num) {
     break;
    }
    sum = 0;
 
-   // ĞŞ¸Ä´Ó×óÍùÓÒµÚÒ»¸ö10±ä³É01
+   // ä¿®æ”¹ä»å·¦å¾€å³ç¬¬ä¸€ä¸ª10å˜æˆ01
    for (int i = 0; i < b.length - 1; i++) {
     if (b[i].equals("1") && b[i + 1].equals("0")) {
      point = i;
@@ -128,7 +128,7 @@ public class ArrayCombination {
      break;
     }
    }
-   // ½« i-point¸öÔªËØµÄ1ÍùÇ°ÒÆ¶¯ 0ÍùºóÒÆ¶¯
+   // å°† i-pointä¸ªå…ƒç´ çš„1å¾€å‰ç§»åŠ¨ 0å¾€åç§»åŠ¨
    for (int i = 0; i < point - 1; i++)
     for (int j = i; j < point - 1; j++) {
      if (b[i].equals("0")) {
@@ -137,12 +137,12 @@ public class ArrayCombination {
       b[j + 1] = temp;
      }
     }
-   // Çå¿Õ StringBuffer
+   // æ¸…ç©º StringBuffer
    sb.setLength(0);
    count = 0;
   }
   // 
-//  System.out.println("Êı¾İ³¤¶È " + list.size());
+//  System.out.println("æ•°æ®é•¿åº¦ " + list.size());
   return list;
 
  }
@@ -150,12 +150,12 @@ public class ArrayCombination {
 }
 
 
-//¶¯Ì¬¹æ»® ×éºÏËã·¨
+//åŠ¨æ€è§„åˆ’ ç»„åˆç®—æ³•
 //public class ArrayCombination {
 //  public static void main(String[] args) {
 //      int[] sList=new int[]{1,2,3,4};
 //      String str="";
-//      //Çó3¸öÊıµÄ×éºÏ¸öÊı
+//      //æ±‚3ä¸ªæ•°çš„ç»„åˆä¸ªæ•°
 //      count(0,str,sList,2);
 //     
 //  }
