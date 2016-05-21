@@ -2,7 +2,7 @@ import java.util.Iterator;
 
 /**
  * @author oscar
- * @desc 两种不同的解析json方式
+ * @desc 涓ょ涓嶅悓鐨勮В鏋恓son鏂瑰紡
  *           1. net.sf.json   2. org.json
  *
  */
@@ -10,7 +10,7 @@ public class JsonParser {
 	
 	public static void main(String[] args){
 		
-		String str = "{\"response\":{\"data\":[{\"address\":\"南京市游乐园\",\"province\":\"江苏\",\"district\":\"玄武区\",\"city\":\"南京\"}]},\"status\":\"ok\"}";
+		String str = "{\"response\":{\"data\":[{\"address\":\"锟较撅拷锟斤拷锟斤拷锟斤拷园\",\"province\":\"锟斤拷锟斤拷\",\"district\":\"锟斤拷锟斤拷锟斤拷\",\"city\":\"锟较撅拷\"}]},\"status\":\"ok\"}";
 		String resp = orgParserJson(str);
 		
 		System.out.println(resp);
