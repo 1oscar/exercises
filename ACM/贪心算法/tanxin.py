@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 #coding=utf8
+'''
+    @author:oscar
+    @date:2016-05-21
+'''
 
 def func(inputNum):
     eleList = [100,50,20,10,5,1]
