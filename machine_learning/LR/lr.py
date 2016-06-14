@@ -4,6 +4,7 @@
 '''
     @date:2016-06-13
     @author:dkf
+    @ http://www.hongweipeng.com/index.php/archives/355/
 '''
 
 from numpy import *
